@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+if [ -d plugins ]; then
+  unzip elementor.3.6.7.zip
+  unzip elementor-pro-3.7.5.zip
+
+  if [ -d __MACOSX ]; then rm -Rf ./__MACOSX; fi
+
+  cp -r elementor ./plugins
+  cp -r elementor-pro ./plugins
+  rm -Rf ./elementor
+  rm -Rf ./elementor-pro
+
+else echo "first create the plugins folder"; fi

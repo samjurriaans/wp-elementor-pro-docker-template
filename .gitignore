@@ -1,3 +1,4 @@
-wordpress/
-data/
 /.idea
+/data
+/wordpress
+/plugins/*
